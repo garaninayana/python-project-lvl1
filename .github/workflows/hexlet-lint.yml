@@ -4,7 +4,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: linter
-      - run: 
-      pip install poetry
-      make lint
+      - uses: actions/checkout@v2
+      - name: setup-python
+      uses: actions/setup-python@v2
+      - name: install1
+      run:  pip install poetry
+      - name: install2
+      run: make install
+      - name: run-linter
+      run:  make lint
