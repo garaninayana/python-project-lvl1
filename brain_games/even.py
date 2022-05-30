@@ -35,7 +35,7 @@ def brain_even():
         print("'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, " + name + '!')
         break
     else:
-      print("It's a wrong answer ;(.\nLet's try again,  " + name + "!")
+      print("It's a wrong answer ;(.\nLet's try again, " + name + "!")
       break
     i += 1
   else:
