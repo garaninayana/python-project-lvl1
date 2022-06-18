@@ -3,6 +3,7 @@ from random import randint
 
 condition = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
+
 def main_part():
     number = randint(1, 100)
     expression = number
@@ -15,4 +16,3 @@ def main_part():
     else:
         result = 'no'
     return result, expression
-

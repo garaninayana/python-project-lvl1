@@ -9,7 +9,7 @@ def engine(game):
     print(game.condition)
     i = 0
     while i <= 2:
-        result, expression =  game.main_part()
+        result, expression = game.main_part()
         print(f'Question: {expression}')
 
         answer = ''
@@ -19,8 +19,8 @@ def engine(game):
         if answer == result:
             print('Correct!')
         else:
-            print(f"{answer} is wrong answer ;(. Correct answer was {result}.\nLet's try again, " + name + '!' )
+            print(f"{answer} is wrong answer ;(. Correct answer was {result}.\nLet's try again, " + name + '!')
             break
         i += 1
     else:
-        print('Congratulations, ' + name + '!')    
+        print('Congratulations, ' + name + '!')
