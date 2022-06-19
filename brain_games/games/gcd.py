@@ -10,4 +10,4 @@ def main_part():
     num2 = randint(1, 100)
     expression = f'{num1} {num2}'
     result = math.gcd(num1, num2)
-    return result, expression
+    return str(result), expression
