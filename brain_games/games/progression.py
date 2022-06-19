@@ -15,9 +15,9 @@ def main_part():
         if missing_num == missing_num_index:
             expression = f'{expression} ..'
             missing_num_index += 1
-    else:
-        num = f'{first_num + difference * missing_num_index}'
-        expression = f'{expression} {num}'
-        missing_num_index += 1
+        else:
+            num = f'{first_num + difference * missing_num_index}'
+            expression = f'{expression} {num}'
+            missing_num_index += 1
     result = first_num + difference * missing_num
-    return str(result), map(str, expression)
+    return str(result), expression.lstrip()
