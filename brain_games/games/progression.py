@@ -20,4 +20,4 @@ def main_part():
         expression = f'{expression} {num}'
         missing_num_index += 1
     result = first_num + difference * missing_num
-    return str(result), expression
+    return str(result), map(str, expression)
